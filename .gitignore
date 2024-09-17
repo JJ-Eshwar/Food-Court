@@ -1,0 +1,43 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/.parcel-cache
+../dist
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+src/dist/website.26b353a0.js
+public/index.html
+public/favicon.ico
+src/dist/website.26b353a0.js.map
+src/dist/login.b6d7f137.svg
+src/dist/login.57bfa437.svg
+src/img/login.svg
+src/dist/index.c35a7de5.css.map.4208.ez
+src/dist/index.c35a7de5.css.map
+src/dist/index.05cba7ac.js.map
+src/dist/index.c35a7de5.css
+src/dist/constant.8a4d97fe.js.15628.1ew
+src/dist/constant.8a4d97fe.js.map
+src/dist/index.05cba7ac.js
+src/dist/constant.8a4d97fe.js
+src/reportWebVitals.js
+src/setupTests.js
+src/App.test.js
