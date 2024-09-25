@@ -89,8 +89,44 @@ hr {
   display: flex;
 }
 .container{
-  background-color:#f0f0f0;
+  background-color:#fff;
 }
+
+.header{
+  position: relative;
+  box-shadow: -2px 7px 5px -6px #0000009c;
+  z-index: 5000;
+}
+.res-card{
+  position: relative;
+  box-shadow: -2px 7px 5px -6px #0000009c;
+  z-index: 5000;
+}
+.search-btn{
+  color: #fff;
+  background-color:coral;
+}
+.filtering-btn{
+  color: #fff;
+  background-color: coral;
+}
+.cartNotify{
+    position:absolute;
+    top: 51%;
+    left: 81.2%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: 600;
+   
+}
+.pp8ft{
+  fill: #fff;
+  stroke-width: 2px;
+  stroke: #282c3f;
+}
+
+
 
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.

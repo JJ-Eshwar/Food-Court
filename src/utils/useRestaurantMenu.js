@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+import { RESTAURANT_TYPE_KEY,MENU_ITEM_TYPE_KEY, MENU_API } from "./constant";
 
 const useRestaurantMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
+  const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
+  const [menuItems, setMenuItems] = useState([]);
 
   useEffect(() => {
     fetchMenu();
@@ -10,19 +13,40 @@ const useRestaurantMenu = (resId) => {
   const fetchMenu = async () => {
     try {
       const data = await fetch(
-        `https://foodfire.onrender.com/api/menu?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&submitAction=ENTER&restaurantId=${resId}`
+        MENU_API + resId
       );
       const json = await data.json();
-        setResInfo(json);
-        console.log(json)// Set the entire jsonData to resInfo
-    
+      // console.log(json)
+      const restaurantInfo = json?.data?.cards?.map(x => x.card)?.
+      find(x => x && x.card['@type'] === RESTAURANT_TYPE_KEY)?.card?.info || null;
+      setRestaurant(restaurantInfo); 
+      
+      console.log(restaurantInfo)
+     
+
+      // Set menu item data
+      const menuItemsData = json?.data?.cards.find(x=> x.groupedCard)?.
+      groupedCard?.cardGroupMap?.REGULAR?.
+      cards?.map(x => x.card?.card)?.
+      filter(x=> x['@type'] == MENU_ITEM_TYPE_KEY)?.
+      map(x=> x.itemCards).flat().map(x=> x.card?.info) || [];
+
+const uniqueMenuItems = [];
+menuItemsData.forEach((item) => {
+if (!uniqueMenuItems.find(x => x.id === item.id)) {
+uniqueMenuItems.push(item);
+}
+})
+setMenuItems(uniqueMenuItems);
+       
     } catch (error) {
       console.error("Error fetching menu:", error);
       setResInfo(null);
     }
   };
 
-  return resInfo; // Return resInfo from the hook
+  return restaurant; // Return resInfo from the hook
+  
 };
 
 export default useRestaurantMenu;

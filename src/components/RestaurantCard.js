@@ -5,11 +5,12 @@ const RestaurantCard = (props) => {
     const { resData } = props;
     const { cloudinaryImageId, name, cuisines, area, lastMileTravelString, avgRating, deliveryTime, costForTwoString } = resData?.info;
     const ratingColor = avgRating >= 4 ? "bg-green-500" : avgRating >= 3 ? "bg-yellow-500" : "bg-red-500";
-    return resData == null ?(
+    
+    return resData == null ? (
 <MenuShimmer />
         // <div className="res-container border rounded-lg ">
     ) : (
-        <div className="res-card w-50  border-2 bg-white rounded-lg">
+        <div className="res-card w-50 rounded-lg  hover:bg-gray-500">
             <img className="card-img h-40 w-full rounded-lg bg-white cursor-pointer object-cover shadow-lg" alt={name} src={CDN_URL +
                 cloudinaryImageId} />
             <div className="">
@@ -24,5 +25,16 @@ const RestaurantCard = (props) => {
 
     )
 };
+
+ export const withPromotedLabel = (RestaurantCard) => {
+    return (props) => {
+        return (
+            <div>
+                <label className="absolute bg-black text-white m-2 p-2 rounded-lg">Promoted</label>
+                <RestaurantCard {...props} />
+            </div>
+        )
+    }
+}
 
 export default RestaurantCard;
