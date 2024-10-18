@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { IMG_CDN_URL } from "../utils/constant";
 import Shimmer from "../components/Shimmer"; // Ensure this is the correct import path for Shimmer
 import { useDispatch } from "react-redux";
-import { addItem } from "../Utils/CartSlice";
+import { addItem } from "../utils/cartSlice.js";
 
 const GroceryList = () => {
     const dispatch = useDispatch();
