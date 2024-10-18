@@ -95,7 +95,7 @@ const Cart = () => {
                       />
                       <div>
                         <h3 className="text-xl font-semibold text-gray-800">
-                          {item?.name || "No Name"}
+                          {item?.displayName || item?.name}
                         </h3>
                         <p className="text-lg text-gray-600">Rs. {((item?.price ?? item?.defaultPrice ?? 0) / 100).toFixed(2)}</p>
                       </div>

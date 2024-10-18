@@ -5,9 +5,10 @@ import { MenuShimmer } from "./Shimmer";
 import { RESTAURANT_TYPE_KEY, MENU_ITEM_TYPE_KEY } from "../utils/constant.js"
 import { MENU_API } from "../utils/constant.js";
 import RestaurantCategory from "./RestaurantCategory.js";
-import { IMG_CDN_URL,ITEM_IMG_CDN_URL } from "../utils/constant.js";
-import { useDispatch } from "react-redux";
+import { IMG_CDN_URL, ITEM_IMG_CDN_URL } from "../utils/constant.js";
 import { addItem } from "../utils/cartSlice.js";
+import { useDispatch } from "react-redux";
+
 
 const RestaurantMenu = () => {
   
