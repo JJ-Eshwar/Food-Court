@@ -40,15 +40,15 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body />,
+        element: <Suspense fallback={<h1>Loading...</h1>}><Body /></Suspense>,
       },
       {
         path: "/About",
-        element: <About />,
+        element: <Suspense fallback={<h1>Loading...</h1>}><About /></Suspense>,
       },
       {
         path: "/Contact",
-        element: <Contact />,
+        element: <Suspense fallback={<h1>Loading...</h1>}><Contact /></Suspense>,
       },
       {
         path: "/Grocery",
