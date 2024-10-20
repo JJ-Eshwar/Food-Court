@@ -28,7 +28,7 @@ const Body = () => {
         );
         const json = await data.json();
         console.log(json)
-        console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+        // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
         // console.log("data",data.data.cards.card[2].data.data.cards)
         setListOfRestaurant(
             json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
@@ -40,10 +40,10 @@ const Body = () => {
 
     };
 
-    return listOfrestaurants.length == 0 ? <Shimmer /> : (
-        // return (
-        <div className="container mx-auto py-6 min-h-screen">
-            <div className="filter  justify-center items-center space-x-5 pt-4">
+    // return listOfrestaurants.length == 0 ? <Shimmer /> : (
+        return (
+        <div className="container mx-auto py-6 px-4 min-h-screen">
+            <div className="btn1 filter  justify-center items-center space-x-5 pt-4">
                 <div className="search">
                     <input type="text" placeholder="Search for restaurants" className=" border border-gray-300 rounded-lg px-4 py-2 w-1/6 focus:outline-none focus:ring-2" value={searchText}
                         onChange={(e) => {

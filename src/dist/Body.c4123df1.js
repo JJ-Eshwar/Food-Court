@@ -641,21 +641,17 @@ const Body = ()=>{
         const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         console.log(json);
-        console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+        // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
         // console.log("data",data.data.cards.card[2].data.data.cards)
         setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setfilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
-    return listOfrestaurants.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerJsDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 43,
-        columnNumber: 44
-    }, undefined) : // return (
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container mx-auto py-6 min-h-screen",
+    // return listOfrestaurants.length == 0 ? <Shimmer /> : (
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "container mx-auto py-6 px-4 min-h-screen",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "filter  justify-center items-center space-x-5 pt-4",
+                className: "btn1 filter  justify-center items-center space-x-5 pt-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "search",
@@ -2635,9 +2631,9 @@ const RestaurantCard = (props)=>{
     return resData == null ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.MenuShimmer), {}, void 0, false, {
         fileName: "src/components/RestaurantCard.js",
         lineNumber: 10,
-        columnNumber: 1
+        columnNumber: 9
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-card w-50 rounded-lg  hover:bg-gray-500",
+        className: "res-card w-50 rounded-lg h-60 hover:bg-gray-500",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "card-img h-40 w-full rounded-lg bg-white cursor-pointer object-cover shadow-lg",
@@ -2668,8 +2664,16 @@ const RestaurantCard = (props)=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex pl-2 gap-1 text-gray-700 text-sm",
-                        children: avgRating
+                        className: "flex items-center justify-between pt-4 pl-2 text-white text-sm",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "flex items-center  px-2 py-1 rounded bg-green-500" // Apply ratingColor here
+                            ,
+                            children: avgRating
+                        }, void 0, false, {
+                            fileName: "src/components/RestaurantCard.js",
+                            lineNumber: 21,
+                            columnNumber: 21
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/RestaurantCard.js",
                         lineNumber: 20,
@@ -2698,20 +2702,20 @@ const withPromotedLabel = (RestaurantCard)=>{
                     children: "Promoted"
                 }, void 0, false, {
                     fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 33,
+                    lineNumber: 41,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
                     ...props
                 }, void 0, false, {
                     fileName: "src/components/RestaurantCard.js",
-                    lineNumber: 34,
+                    lineNumber: 42,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/RestaurantCard.js",
-            lineNumber: 32,
+            lineNumber: 40,
             columnNumber: 13
         }, undefined);
     };
