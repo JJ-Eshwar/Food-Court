@@ -756,7 +756,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","../utils/mockdata.js":"3drqL","./RestaurantCard.js":"bMboU","./Shimmer.js":"g6ZGj","react-router-dom":"9xmpe","./RestaurantMenu.js":"8PuJ6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3drqL":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","react-dom/client":"lOjBx","../utils/mockdata.js":"3drqL","./RestaurantCard.js":"bMboU","./Shimmer.js":"g6ZGj","react-router-dom":"9xmpe","./RestaurantMenu.js":"8PuJ6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3drqL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const restaurantList = [
