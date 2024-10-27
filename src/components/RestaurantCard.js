@@ -10,7 +10,7 @@ const RestaurantCard = (props) => {
         <MenuShimmer />
         // <div className="res-container border rounded-lg ">
     ) : (
-        <div className="res-card w-50 rounded-lg h-60 hover:bg-gray-500">
+        <div className="res-card w-50 rounded-lg h-60 border-2 hover:border-3">
             <img className="card-img h-40 w-full rounded-lg bg-white cursor-pointer object-cover shadow-lg" alt={name} src={CDN_URL +
                 cloudinaryImageId} />
             <div className="">

@@ -1,6 +1,6 @@
 
 import { useSelector } from 'react-redux';
-import login from '../img/login.svg';
+// import login from '../img/login.svg';
 import { LOGO_URL } from '../utils/constant.js';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
