@@ -1,4 +1,5 @@
-import React, { lazy, Suspense } from 'react';
+import * as React from 'react';
+import { lazy, Suspense } from "react";
 import ReactDOM from 'react-dom/client';
 import css from './output.css';
 import Header from './components/Header.js';
