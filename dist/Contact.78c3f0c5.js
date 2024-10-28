@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"fT4Dy":[function(require,module,exports) {
+})({"av7iM":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "da3b6d2a338fa69b";
+module.bundle.HMR_BUNDLE_ID = "d6bf61d978c3f0c5";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -604,11 +604,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"3FsDI","74ad5ea14201648c":"7i2ML"}],"9R1Eu":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5b98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"6d18d6bd340e7473":"3FsDI","74ad5ea14201648c":"7i2ML"}],"cgAOG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee46 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5b98.prelude(module);
+$parcel$ReactRefreshHelpers$ee46.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -616,120 +616,181 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _burgerImagePng = require("../img/burgerImage.png");
-var _burgerImagePngDefault = parcelHelpers.interopDefault(_burgerImagePng);
-// import UserContext from "../utils/UserContext";
-const About = ()=>{
+const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container mx-auto py-6 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition duration-500",
+        className: "min-h-screen bg-gray-100 flex items-center justify-center p-6",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "container mx-auto py-12 px-4 flex flex-col lg:flex-row items-center",
+            className: "bg-white rounded-lg shadow-lg p-8 max-w-md ",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "lg:w-1/2 lg:pr-12 mb-8 lg:mb-0 text-center lg:text-left",
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "text-3xl font-bold mb-6 text-center text-gray-800",
+                    children: "Contact Us"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-center text-gray-600 mb-6",
+                    children: "Have any questions or feedback? We'd love to hear from you!"
+                }, void 0, false, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                    className: "space-y-4 items-center justify-center",
                     children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-4xl font-bold mb-4",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "items-center justify-center",
                             children: [
-                                "Welcome to ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 12,
-                                    columnNumber: 24
-                                }, undefined),
-                                " The world of ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 12,
-                                    columnNumber: 44
-                                }, undefined),
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "text-blue-600 dark:text-blue-400",
-                                    children: "Tasty & Fresh Food"
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "name",
+                                    className: "block text-sm font-medium text-gray-700",
+                                    children: "Name"
                                 }, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 13,
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 11,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    id: "name",
+                                    className: "mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
+                                    placeholder: "Your Name"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 12,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/About.js",
-                            lineNumber: 11,
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 10,
                             columnNumber: 11
                         }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                            className: "text-lg font-medium text-gray-700 dark:text-gray-300",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: [
-                                '"Better you will feel if you eat a',
-                                " ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "text-red-600 dark:text-red-400",
-                                    children: "FoodCourt"
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "email",
+                                    className: "block text-sm font-medium text-gray-700",
+                                    children: "Email"
                                 }, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 17,
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 15,
                                     columnNumber: 13
                                 }, undefined),
-                                ' healthy meal"',
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
-                                    fileName: "src/components/About.js",
-                                    lineNumber: 17,
-                                    columnNumber: 92
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    id: "email",
+                                    className: "mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
+                                    placeholder: "you@example.com"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 16,
+                                    columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/About.js",
-                            lineNumber: 15,
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 14,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                    htmlFor: "message",
+                                    className: "block text-sm font-medium text-gray-700",
+                                    children: "Message"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 19,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    id: "message",
+                                    rows: "4",
+                                    className: "mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
+                                    placeholder: "Your message"
+                                }, void 0, false, {
+                                    fileName: "src/components/Contact.js",
+                                    lineNumber: 20,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "submit",
+                                className: "w-full bg-indigo-600 text-white py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+                                children: "Send Message"
+                            }, void 0, false, {
+                                fileName: "src/components/Contact.js",
+                                lineNumber: 23,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 22,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/About.js",
-                    lineNumber: 10,
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 9,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "lg:w-1/2",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: (0, _burgerImagePngDefault.default),
-                        alt: "Food Image",
-                        className: "w-full h-auto rounded-lg shadow-lg"
-                    }, void 0, false, {
-                        fileName: "src/components/About.js",
-                        lineNumber: 23,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/About.js",
-                    lineNumber: 22,
+                    className: "text-center mt-6 text-gray-600",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: "Or reach us at:"
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 27,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "mailto:foodCourt@mail.com",
+                            className: "text-indigo-600 hover:underline",
+                            children: "foodCourt@mail.com"
+                        }, void 0, false, {
+                            fileName: "src/components/Contact.js",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Contact.js",
+                    lineNumber: 26,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/About.js",
-            lineNumber: 9,
+            fileName: "src/components/Contact.js",
+            lineNumber: 6,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/About.js",
-        lineNumber: 8,
+        fileName: "src/components/Contact.js",
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
-_c = About;
-exports.default = About;
+_c = Contact;
+exports.default = Contact;
 var _c;
-$RefreshReg$(_c, "About");
+$RefreshReg$(_c, "Contact");
 
-  $parcel$ReactRefreshHelpers$5b98.postlude(module);
+  $parcel$ReactRefreshHelpers$ee46.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../img/burgerImage.png":"6hUiN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6hUiN":[function(require,module,exports) {
-module.exports = require("787578af0fff9db3").getBundleURL("iJDXz") + "burgerImage.80e9ef47.png" + "?" + Date.now();
+},{"@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["av7iM","1xC6H"], null, "parcelRequireefef")
 
-},{"787578af0fff9db3":"lgJ39"}]},["fT4Dy","1xC6H"], null, "parcelRequireefef")
-
-//# sourceMappingURL=About.338fa69b.js.map
+//# sourceMappingURL=Contact.78c3f0c5.js.map
