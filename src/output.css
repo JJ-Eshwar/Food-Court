@@ -1647,6 +1647,9 @@ video {
 .pl-1 {
   padding-left: 0.25rem;
 }
+.pl-0{
+  padding-left: 1px;
+}
 
 .text-center {
   text-align: center;

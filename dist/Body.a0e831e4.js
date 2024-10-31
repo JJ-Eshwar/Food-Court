@@ -651,7 +651,7 @@ const Body = ()=>{
         className: "container mx-auto py-6 px-4 min-h-screen",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "btn1 filter  justify-center items-center space-x-5 pt-4",
+                className: "btn1 filter  justify-center items-center space-x-5 pl-0 pt-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "search",

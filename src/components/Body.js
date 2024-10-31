@@ -43,7 +43,7 @@ const Body = () => {
     // return listOfrestaurants.length == 0 ? <Shimmer /> : (
         return (
         <div className="container mx-auto py-6 px-4 min-h-screen">
-            <div className="btn1 filter  justify-center items-center space-x-5 pt-4">
+            <div className="btn1 filter  justify-center items-center space-x-5 pl-0 pt-4">
                 <div className="search">
                     <input type="text" placeholder="Search for restaurants" className=" border border-gray-300 rounded-lg px-4 py-2 w-1/6 focus:outline-none focus:ring-2" value={searchText}
                         onChange={(e) => {
