@@ -36884,7 +36884,6 @@ const RestaurantMenu = ()=>{
     const fetchMenu = async ()=>{
         try {
             const data = await fetch((0, _constantJs.MENU_API) + resId);
-            console.log((0, _constantJs.MENU_API));
             const json = await data.json();
             // console.log(json)
             const restaurantInfo = json?.data?.cards?.map((x)=>x.card)?.find((x)=>x && x.card["@type"] === (0, _constantJs.RESTAURANT_TYPE_KEY))?.card?.info || null;

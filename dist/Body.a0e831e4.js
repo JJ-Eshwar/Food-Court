@@ -640,7 +640,7 @@ const Body = ()=>{
     const fetchData = async ()=>{
         const data = await fetch("https://foodfire.onrender.com/api/restaurants?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
-        console.log(json);
+        // console.log(json)
         // console.log(json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
         // console.log("data",data.data.cards.card[2].data.data.cards)
         setListOfRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);

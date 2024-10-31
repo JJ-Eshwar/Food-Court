@@ -36,7 +36,7 @@ const RestaurantMenu = () => {
       const data = await fetch(
         MENU_API + resId
       );
-      console.log(MENU_API);
+      
       const json = await data.json();
       // console.log(json)
       const restaurantInfo = json?.data?.cards?.map(x => x.card)?.
