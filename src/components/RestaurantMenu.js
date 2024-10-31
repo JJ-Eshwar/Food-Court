@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 const RestaurantMenu = () => {
   
   const { resId } = useParams();
-  console.log("RestaurantMenu component rendered", resId);
+  // console.log("RestaurantMenu component rendered", resId);
   
   const [restaurant, setRestaurant] = useState(null); // call useState to store the api data in res
   const [menuItems, setMenuItems] = useState([]);
@@ -36,6 +36,7 @@ const RestaurantMenu = () => {
       const data = await fetch(
         MENU_API + resId
       );
+      console.log(MENU_API);
       const json = await data.json();
       // console.log(json)
       const restaurantInfo = json?.data?.cards?.map(x => x.card)?.
@@ -54,7 +55,8 @@ const RestaurantMenu = () => {
         map(x => x.itemCards)
         .flat().map(x => x.card?.info) || [];
 
-      console.log(menuItemsData)
+      // console.log(menuItemsData)
+      console.log(MENU_API);
       
 
       const uniqueMenuItems = [];

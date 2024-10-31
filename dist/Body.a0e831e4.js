@@ -714,7 +714,7 @@ const Body = ()=>{
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "res-container flex pl-30 flex-wrap gap-4 mt-8",
+                className: "res-container flex items-center justify-center flex-wrap gap-4 mt-8",
                 children: filteredRestaurant.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         className: "cardLink",
                         to: `/restaurant/${restaurant.info.id}`,

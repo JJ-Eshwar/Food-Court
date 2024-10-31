@@ -1,7 +1,7 @@
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-      <div className="Footer bg-gray-800 text-white flex py-4 mt-8 pt-5" >
+      <div className="Footer bg-gray-800 text-white flex py-4 mt-8 pt-5 w-auto" >
         <div className=" bg-gray-800 mx-auto flex  lg:flex-row  px-4">
           <div className="  text-center lg:text-left mb-4 lg:mb-0 lg:mr-4">
             <span>Created  By</span>

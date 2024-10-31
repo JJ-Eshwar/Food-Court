@@ -150,7 +150,7 @@ hr {
 }
 
 .menu-items-container {
-  width: 800px;
+  width: -webkit-fill-available;
   margin-top: 30px;
 }
 
@@ -254,7 +254,7 @@ hr {
   }
 
   .Footer {
-    width: 1210px;
+    width: auto;
   }
 
   .restaurant-menu {
@@ -317,7 +317,7 @@ hr {
   }
 
   .menu-items-container {
-    width: 100vw;
+    width: -webkit-fill-available;
     margin-top: 30px;
   }
 
@@ -466,7 +466,7 @@ hr {
   }
 
   .footer {
-    width: 700px;
+    width: auto;
     height: 90px;
     display: flex;
   }
@@ -502,12 +502,7 @@ hr {
 
   .res-container {
     flex-wrap: wrap;
-    padding-right: 300px;
     display: flex;
-  }
-
-  .container {
-    padding-right: 300px;
   }
 
   .card-img {
@@ -557,7 +552,7 @@ hr {
   }
 
   .footer {
-    width: 700px;
+    width: auto;
     height: 90px;
     display: flex;
   }
@@ -1622,10 +1617,6 @@ img, video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .footer {
-    width: 300px;
   }
 }
 

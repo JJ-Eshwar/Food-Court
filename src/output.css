@@ -208,7 +208,7 @@ hr {
 
 .menu-items-container {
   margin-top: 30px;
-  width: 800px;
+  width: -webkit-fill-available;
 }
 .menu-title-wrap {
   padding: 20px;
@@ -307,7 +307,7 @@ margin-top: 10px;
    
 }
 .Footer{
-  width: 1210px;
+  width: auto;
 }
   /* Restaurant Menu  */
 .restaurant-menu {
@@ -364,7 +364,7 @@ margin-top: 10px;
 
 .menu-items-container {
   margin-top: 30px;
-  width: 100vw;
+  width:-webkit-fill-available;
 }
 .menu-title-wrap h3 {
   font-size: 1.08rem;
@@ -506,7 +506,7 @@ font-size: 14px;
 }
 .footer{
   height: 90px;
-  width:700px;
+  width:auto;
   display: flex;
   
 }
@@ -542,13 +542,11 @@ font-size: 14px;
 .res-container{
   display: flex;
   flex-wrap: wrap;
-  padding-right: 300px;
+  
   /* margin: 150px; */
   
 }
-.container{
-  padding-right: 300px;
-}
+
 /* Restaurant Menu  */
 .card-img{
   height: 10px;
@@ -589,7 +587,7 @@ font-size: 14px;
 }
 .footer{
   height: 90px;
-  width:700px;
+  width:auto;
   display: flex;
   
 }
@@ -1917,9 +1915,7 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .footer{
-    width: 300px;
-  }
+  
 }
 
 
